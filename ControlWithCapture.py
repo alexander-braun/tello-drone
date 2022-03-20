@@ -16,7 +16,7 @@ while True:
     cv2.waitKey(1)
 
     #control
-    vals = kc.getKeyboardInput()
+    vals = kc.getKeyboardInput(img)
     me.send_rc_control(vals[0], vals[1], vals[2], vals[3])
     sleep(0.1)
     
